@@ -1,3 +1,9 @@
+# revision 17050
+# category Package
+# catalog-ctan /macros/latex/contrib/anyfontsize
+# catalog-date 2010-02-15 00:07:58 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-anyfontsize
 Version:	20100215
 Release:	1
@@ -45,6 +51,7 @@ package generalises the facility.
 %doc %{_texmfdistdir}/doc/latex/anyfontsize/README
 %doc %{_texmfdistdir}/doc/latex/anyfontsize/anyfontsize.pdf
 %doc %{_texmfdistdir}/doc/latex/anyfontsize/anyfontsize.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,3 +62,5 @@ package generalises the facility.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
