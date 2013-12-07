@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-anyfontsize
 Version:	20100215
-Release:	4
+Release:	5
 Summary:	Select any font size in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/anyfontsize
