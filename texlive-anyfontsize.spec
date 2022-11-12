@@ -1,18 +1,12 @@
-# revision 17050
-# category Package
-# catalog-ctan /macros/latex/contrib/anyfontsize
-# catalog-date 2010-02-15 00:07:58 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-anyfontsize
-Version:	20190228
+Version:	17050
 Release:	1
 Summary:	Select any font size in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/anyfontsize
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anyfontsize.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anyfontsize.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anyfontsize.r17050.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anyfontsize.doc.r17050.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +23,12 @@ family, or for either computer modern encoding; the present
 package generalises the facility.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -45,7 +39,7 @@ package generalises the facility.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
