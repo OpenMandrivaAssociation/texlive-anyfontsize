@@ -5,8 +5,8 @@ Summary:	Select any font size in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/anyfontsize
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anyfontsize.r17050.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anyfontsize.doc.r17050.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anyfontsize.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anyfontsize.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
