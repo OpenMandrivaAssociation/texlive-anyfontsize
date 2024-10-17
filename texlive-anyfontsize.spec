@@ -3,7 +3,7 @@ Version:	17050
 Release:	2
 Summary:	Select any font size in LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/anyfontsize
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/anyfontsize
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anyfontsize.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anyfontsize.doc.r%{version}.tar.xz
